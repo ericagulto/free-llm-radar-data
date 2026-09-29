@@ -1432,5 +1432,3 @@ window.RADAR = {
   }
 ]
 };
-
-/* sync test 1790663878 */
