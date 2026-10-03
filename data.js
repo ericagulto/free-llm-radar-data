@@ -46,8 +46,8 @@
    ============================================================ */
 
 window.RADAR = {
-  updated: '2026-10-02T08:20:00+08:00',
-  verifiedBy: 'Run 2 of 2026-10-02. Vendor primary pages read directly: workbuddy.cn/events/invite (即日起至2026年10月31日 + 受邀好友 2,000 积分 截止日期 2026年10月31日 — both unchanged), docs.qoder.com/events/flashoffer (still free, end date still TBA), vercel.com/changelog/ling-3-1-flash-is-now-available-on-ai-gateway (free to 13 Oct, unchanged), vercel.com/ai-gateway/models/laya (Laya, free, promo ends 31 Oct — NOT added, out of scope), opencode.ai/docs/zen (all ten free models still "limited time", NO published end dates — tracker-claimed 5/10 Oct expiries rejected), inference-docs.cerebras.ai/support/change-log ($5 trial credit after a verified payment method — correction of 2026-10-02 stands), ai21.com/pricing vs docs.ai21.com/docs/usage-cost (AI21 own pages DISAGREE on trial length: 7 days vs three months — see the ai21 note). Tracker-corroborated, not vendor-read: MiniMax Code double check-in + ZCode Trust Build + GLM night-free all still to 7 Oct (aipromonow, igetoken); Hunyuan Hy3 限免 + Hy4 night-free to 31 Oct, night hours 23:00-08:00, Hy4 last start 10 Oct (aipromonow).',
+  updated: '2026-10-03T08:10:00+08:00',
+  verifiedBy: 'Run of 2026-10-03. Vendor primary pages read directly: docs.bigmodel.cn/cn/coding-plan/notice/event-glm-5.3-flash (GLM Coding Plan night-free, 23:00-09:00, GLM-5.3-Flash only, free in ZCode/AutoClaw, 2x quota in other agents, 5-hour/week cap — event runs 3 Sep to 7 Oct, UNCHANGED), workbuddy.cn/events/invite (invite campaign 即日起至2026年10月31日, invitee 2,000 积分 截止日期 2026年10月31日 — UNCHANGED), docs.qoder.com/events/flashoffer + docs.qoder.cn/events/flashoffer (Qwen3.8-Flash still free past 30 Sep, end date still TBA on the page — tracker claim of a 31 Oct end REJECTED, vendor wins), vercel.com/changelog/ling-3-1-flash-is-now-available-on-ai-gateway (free to 13 Oct — UNCHANGED), vercel.com/changelog/laya-decision-model-now-available-on-ai-gateway-free-through-october-31 (Laya free to 31 Oct — NOT added, evaluation/classifier model, out of scope for a free-LLM list), workbuddy.ai/pricing (Free $0/mo, 100 credits/month + 30/day — page read, the DeepSeek V4.1-Flash end-date page is region-blocked). Multi-source only, not vendor-read: WorkBuddy 国际版 DeepSeek-V4.1-Flash free to 9 Oct (Tencent/MSN/CSDN, 26 Sep) — NOT added, see the 2026-10-03 changelog; Hunyuan Hy3 限免 + Hy4 preview night-free 23:00-08:00 extended to 31 Oct, Hy4 new-user 14-day first start by 10 Oct 23:59 (Tencent 30 Sep announcement via Sina/Tencent News); DeepSeek Harness ¥6 desktop credit to ~6 Oct 21:00; MiniMax Code double check-in to 7 Oct; ZCode Trust Build 28 Sep-7 Oct. Idempotency: cleared stale status:new on ling31 and dsharness.',
   offers: [
   {
     "id": "amd",
@@ -1531,7 +1531,7 @@ window.RADAR = {
     "unit": "free until 13 Oct",
     "end": "2026-10-13",
     "added": "2026-10-02",
-    "status": "new",
+    "status": "expiring",
     "card": false,
     "china": true,
     "reach": "cn-direct",
@@ -1563,7 +1563,7 @@ window.RADAR = {
     "unit": "¥6 credit",
     "end": "2026-10-06",
     "added": "2026-10-02",
-    "status": "new",
+    "status": "expiring",
     "card": false,
     "china": true,
     "reach": "cn-only",
@@ -1589,7 +1589,48 @@ window.RADAR = {
   rail: [
   {
     "d": "today",
-    "label": "Today · 2 Oct",
+    "label": "Today · 3 Oct",
+    "items": [
+      {
+        "c": "exp",
+        "n": "No deadline changes today — every published end date re-verified unchanged",
+        "t": "Read vendor pages directly this morning: GLM night-free still to 7 Oct (docs.bigmodel.cn), Qoder Qwen3.8-Flash still free with no end date (docs.qoder.com / docs.qoder.cn), Ling 3.1 Flash still to 13 Oct (Vercel changelog), WorkBuddy invite still to 31 Oct (workbuddy.cn/events/invite), Hunyuan Hy3 + Hy4 night-free still to 31 Oct. Nothing moved."
+      },
+      {
+        "c": "exp",
+        "n": "Tracker claim rejected — Qoder has NOT published a 31 Oct end date",
+        "t": "Two CN trackers now state Qoder CN's Qwen3.8-Flash free window runs to 31 October. Qoder's own CN and international event pages both still say only that the free period was extended past 30 September and the end date will be announced on the page. Vendor wins; the row keeps no end date."
+      },
+      {
+        "c": "exp",
+        "n": "DeepSeek Harness ¥6 credit — closes ~6 Oct",
+        "t": "Desktop-app launch credit, now confirmed by Tencent/Sohu/17173 reporting as usable to 6 October 21:00. Small grant; the app is the point."
+      },
+      {
+        "c": "exp",
+        "n": "ZCode Trust Build / MiniMax Code / GLM night-free — 7 Oct",
+        "t": "All three still end 7 October. GLM night-free is paid Coding Plan subscribers only; Trust Build tokens land late and expire next midnight."
+      },
+      {
+        "c": "exp",
+        "n": "Ling 3.1 Flash — free to 13 Oct",
+        "t": "Vercel changelog re-read: free through 13 October. Use the -free model ID — it stops serving at the end rather than billing you."
+      },
+      {
+        "c": "exp",
+        "n": "Hunyuan Hy4 new users — first conversation by 10 Oct",
+        "t": "The 31 Oct night-free extension is unchanged, but new users must start their first Hy4 conversation by 10 October 23:59 to trigger the 14-day daily quota."
+      },
+      {
+        "c": "exp",
+        "n": "AI21 $10 credit — 6 Oct (length still contested)",
+        "t": "AI21's own two pages still disagree: pricing says 7 days, docs say three months. Unresolved; the date is a placeholder either way since the clock runs from your signup."
+      }
+    ]
+  },
+  {
+    "d": "yesterday",
+    "label": "Yesterday · 2 Oct",
     "items": [
       {
         "c": "exp",
@@ -1634,8 +1675,8 @@ window.RADAR = {
     ]
   },
   {
-    "d": "yesterday",
-    "label": "Yesterday · 1 Oct",
+    "d": "week",
+    "label": "Earlier this week · 1 Oct",
     "items": [
       {
         "c": "ext",
