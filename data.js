@@ -46,8 +46,8 @@
    ============================================================ */
 
 window.RADAR = {
-  updated: '2026-10-05T08:00:00+08:00',
-  verifiedBy: 'Run of 2026-10-05. NO DEADLINE CHANGES — every published end date re-verified unchanged. Vendor primary pages read directly: docs.bigmodel.cn/cn/coding-plan/notice/event-glm-5.3-flash (GLM Coding Plan night-free 23:00-09:00, GLM-5.3-Flash only, 0 consumption in ZCode/AutoClaw, 2x in other plan agents, 5-hour/week cap — campaign 3 Sep to 7 Oct, UNCHANGED), docs.qoder.com/events/flashoffer AND docs.qoder.cn/events/flashoffer (Qwen3.8-Flash still free past 30 Sep, end date still to be announced on the page, both locales agree — UNCHANGED), workbuddy.cn/events/invite (即日起至2026年10月31日, invitee 2,000 积分 截止日期 2026年10月31日, reward tiers 50/+100/+500 all unchanged), vercel.com/changelog/ling-3-1-flash-is-now-available-on-ai-gateway (free to 13 Oct — UNCHANGED), docs.ai21.com/docs/usage-cost (still says three months while ai21.com/pricing says 7 days — still contested, NOT flipped), opencode.ai/docs/zen (roster now 12 free models, up from 10 — Fledge Alpha Free and Nemotron 3.5 Lightning new; still no published end date on any), kilo.ai/landing/free-models (Space Bunny Alpha retired 5 Oct as scheduled; still six free models). Multi-source only, not vendor-read: Hunyuan Hy3 限免 + Hy4 preview night-free 23:00-08:00 to 31 Oct with Hy4 new-user 14-day first start by 10 Oct 23:59 (Tencent 30 Sep announcement via ifeng/Sohu/Tencent News); DeepSeek Harness ¥6 desktop credit to 6 Oct 21:00 (Sohu/17173/denghy/AI Promo Now); MiniMax Code double check-in 28 Sep-7 Oct; ZCode Trust Build 28 Sep-7 Oct. Verified and rejected: a tracker claims Kilo\'s free tier is \'12 models, ~200 req/hour, no signup\' — the vendor page requires an account and publishes no free rate limit, so no rate-limit figure was added. Idempotency: cleared a stale status:new on orcarouter (its first run was 4 Oct); rail rolled 5 Oct today / 4 Oct yesterday / 3 Oct + 2 Oct week; oldest 1 Oct group dropped; Space Bunny retirement recorded under closed.',
+  updated: '2026-10-06T08:00:00+08:00',
+  verifiedBy: 'Run of 2026-10-06. NO DEADLINE CHANGES — every published end date re-verified unchanged. Vendor primary pages read directly: docs.bigmodel.cn/cn/coding-plan/notice/event-glm-5.3-flash (GLM Coding Plan night-free 23:00-09:00, GLM-5.3-Flash only, 0 consumption in ZCode/AutoClaw, 2x in other plan agents, 5-hour/week cap — campaign 2026-09-03 to 2026-10-07, UNCHANGED), docs.qoder.com/events/flashoffer (Qwen3.8-Flash still free past 30 Sep, end date still to be announced on the page, UNCHANGED), workbuddy.cn/events/invite (即日起至2026年10月31日, invitee 2,000 积分 截止日期 2026年10月31日, tiers 50/+100/+500 all unchanged), vercel.com/changelog/ling-3-1-flash-is-now-available-on-ai-gateway (free through 13 October 2026 — UNCHANGED), inference-docs.cerebras.ai/support/rate-limits (still $5 trial credit expiring 30 days after grant, card required, no auto-renewing free tier — the 2 Oct correction holds), opencode.ai/docs/zen (still 12 free models, no published end date on any), kilo.ai/landing/free-models (free-model count now FIVE, down from six at the last check; the five listed are Ling 3.1 Flash, Dots3-Note Preview, Laguna S 2.1, Nemotron 3 Ultra and Nemotron 3 Super — all five still in our models array). ADDED — indextranslate (Bilibili Index-Translate): a free public translation API, no key and no signup, OpenAI-compatible at https://index-translate.bilibili.com/v1, model Index-Translate-35B-A3B, opened 2026-10-04. Verified OFFICIAL against the vendor\'s own GitHub README (github.com/bilibili/Index-Translate) and index-translate.bilibili.com — the vendor states 官方免费 API 现已开放, 无需本地显卡环境, 直接免费调用. No rate limit and no end date are published by the vendor; both are recorded as unpublished rather than guessed. Multi-source only, not vendor-read: Hunyuan Hy3 限免 + Hy4 preview night-free 23:00-08:00 to 31 Oct with Hy4 new-user 14-day first start by 10 Oct 23:59 (Tencent WorkBuddy 30 Sep announcement via Sohu/IT之家/Sina/Tencent News, re-read today); DeepSeek Harness ¥6 desktop credit to 6 Oct (aipromonow detail page read directly, 76 community votes at 89% valid); MiniMax Code double check-in 28 Sep-7 Oct; ZCode Trust Build 28 Sep-7 Oct. Considered and deliberately NOT added: MiMo (Xiaomi) signup credit, Atria Dawn Preview 100M tokens, SenseNova 1.2M credits/week, DTMaaS 1,000 Credits, Cline free Space Bunny Alpha, GitHub Copilot Pro for teachers/OSS maintainers (eligibility-gated), Cursor $35 event credits, ChatGPT Plus 3-month half-price (a discount, not a free tier) — all tracker-only this run, or gated, or discounts rather than free tiers. Idempotency: no stale status:new found (second consecutive clean run); rail rolled 6 Oct today / 5 Oct yesterday / 4 Oct + 3 Oct week; oldest 2 Oct group dropped.',
   offers: [
   {
     "id": "amd",
@@ -682,8 +682,8 @@ window.RADAR = {
       "Work. Switch to a paid, local or BYOK model whenever your task changes."
     ],
     "test": "— free models are client-bound. Kilo accepts external keys if you want portable capacity.",
-    "warn": "Free hosted inference is <b>not</b> the same as free-to-download weights. The free catalog updates live and a listing can disappear the moment the upstream provider changes its pricing — the free list is a rotating promotion, not a standing commitment. <b>Space Bunny Alpha retired 5 October</b> as scheduled and is gone from the roster; the vendor page still lists six free models, so the slot it vacated has been filled by the rotating catalog.",
-    "note": "Open source (MIT) and model-agnostic: the same client can run free hosted models, your own AMD or Groq key, or a local Ollama model. Roster re-read 5 Oct 2026 at <b>kilo.ai/landing/free-models</b> — six models at $0 input and $0 output. The vendor page publishes no rate limit for the free tier."
+    "warn": "Free hosted inference is <b>not</b> the same as free-to-download weights. The free catalog updates live and a listing can disappear the moment the upstream provider changes its pricing — the free list is a rotating promotion, not a standing commitment. <b>Space Bunny Alpha retired 5 October</b> as scheduled and is gone from the roster; the vendor page's own counter has since dropped from <b>six free models to five</b>, and the rotating catalog is what decides which.",
+    "note": "Open source (MIT) and model-agnostic: the same client can run free hosted models, your own AMD or Groq key, or a local Ollama model. Roster re-read 6 Oct 2026 at <b>kilo.ai/landing/free-models</b> — <b>five</b> models at $0 input and $0 output: Ling 3.1 Flash, Dots3-Note Preview, Laguna S 2.1, Nemotron 3 Ultra and Nemotron 3 Super. All five are still in this row's model list; the count fell from six as one listing aged out, which is exactly the churn the rotating catalog produces. The vendor page publishes no rate limit for the free tier."
   },
   {
     "id": "stepfun",
@@ -1624,12 +1624,89 @@ window.RADAR = {
     "test": "# the free-tier list is public — this call needs no key\ncurl -s https://api.orcarouter.ai/api/free-package/public \\\n  | python3 -m json.tool | head -40",
     "warn": "<b>Small and gated.</b> An account that has never paid gets <b>10 req/min and 50 req/day</b> — enough to evaluate, not to build on. Free models are also gated on an <b>established GitHub account</b>. A per-request <b>prompt-size cap</b> applies on the unpaid tier and the vendor deliberately does not publish the number: an oversized prompt fails with a <b>400</b>, not a 429, and retrying it unchanged fails forever — a long document or a full conversation history will hit it. Free ids also <b>never fall back to a paid model</b>, so a saturated free model simply returns 429 rather than quietly billing you, and no <b>X-RateLimit-*</b> headers are sent, so you cannot read the remaining window.",
     "note": "Two things lift this above a typical reseller promo. The free ids shadow real catalog models — <b>DeepSeek V4 Flash</b>, <b>GLM-5.3-Flash</b>, <b>Tencent Hunyuan Hy3</b> and <b>Hy4 preview</b> — and cost $0 per token with no expiry: the vendor states free models do not expire while they stay in the lineup. And the endpoint is OpenAI-compatible while also accepting the <b>Anthropic and Gemini</b> request shapes, so the same key drops into Claude Code or the Google SDK without a translation proxy. Verified 4 Oct 2026 directly against docs.orcarouter.ai and the vendor's own public free-tier API."
+  },
+  {
+    "id": "indextranslate",
+    "name": "Bilibili Index-Translate",
+    "sub": "Free public translation API",
+    "kind": "keyless",
+    "budget": 0,
+    "unit": "per-request · unpublished",
+    "end": null,
+    "added": "2026-10-06",
+    "status": "new",
+    "card": false,
+    "china": true,
+    "reach": "cn-direct",
+    "link": "https://github.com/bilibili/Index-Translate",
+    "linkLabel": "Read the docs",
+    "budgetNote": "<b>Free public API, no key and no signup</b> · OpenAI-compatible · one model: <b>Index-Translate-35B-A3B</b> · the vendor publishes <b>no rate limit and no end date</b>",
+    "models": [
+      "Index-Translate-35B-A3B"
+    ],
+    "base": "https://index-translate.bilibili.com/v1",
+    "auth": "None — no API key required",
+    "steps": [
+      "No account, no key, no card. Point any OpenAI-compatible client at <b>https://index-translate.bilibili.com/v1</b>.",
+      "Use the model id <b>Index-Translate-35B-A3B</b>. There is no other model on this endpoint.",
+      "Send your text with a translation instruction — e.g. <i>请将以下文本翻译为英语，直接输出翻译结果</i> — the model is tuned for translation, not open-ended chat.",
+      "The vendor ships a zero-dependency script for a quick check: <b>python inference/llm/call_api.py \"你好，世界\" --target en</b>."
+    ],
+    "test": "curl https://index-translate.bilibili.com/v1/chat/completions \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"model\":\"Index-Translate-35B-A3B\",\"messages\":[{\"role\":\"user\",\"content\":\"请将以下文本翻译为英语，直接输出翻译结果，不要进行任何解释。\\n\\n你好，世界。\"}]}'",
+    "warn": "<b>Two things to know before you build on it.</b> It is a <b>translation model, not a general chat model</b> — send it an ordinary coding or reasoning prompt and you will get poor output; that is the design, not a bug. And Bilibili publishes <b>no rate limit and no end date</b>: the vendor's own page says only that the API is free and open, so treat both as unknown and add your own retry/backoff rather than assuming a quota. No SLA, no support channel, and no key means no way to appeal a block.",
+    "note": "A rare thing on this list: genuinely <b>keyless</b>. There is nothing to sign up for, nothing to claim and no card — the same zero-friction shape as Pollinations. Bilibili's Index team opened it on <b>4 October 2026</b>, built on Qwen3.5 and covering <b>150 languages</b> with terminology and formatting control. The 2B and 9B weights are also released on Hugging Face and ModelScope if you would rather self-host. Verified 6 Oct 2026 against the vendor's own README and site."
   }
 ],
   rail: [
   {
     "d": "today",
-    "label": "Today · 5 Oct",
+    "label": "Today · 6 Oct",
+    "items": [
+      {
+        "c": "new",
+        "n": "Bilibili Index-Translate — free API, no key at all",
+        "t": "A genuinely keyless endpoint: no signup, no card, nothing to claim. OpenAI-compatible at https://index-translate.bilibili.com/v1 serving Index-Translate-35B-A3B, a Qwen3.5-based translation model covering 150 languages, opened 4 October. Verified OFFICIAL against Bilibili's own README and site. The vendor publishes no rate limit and no end date — both are recorded as unpublished rather than guessed."
+      },
+      {
+        "c": "exp",
+        "n": "No deadline changes — every published end date re-verified unchanged",
+        "t": "Vendor pages read directly this morning: GLM Coding Plan night-free still 2026-09-03 → 2026-10-07 (docs.bigmodel.cn, rules re-confirmed: 23:00–09:00, GLM-5.3-Flash only, 0-consumption in ZCode/AutoClaw, 2× elsewhere, 5-hour/week cap), WorkBuddy invite still 即日起至 2026年10月31日 with the invitee 2,000 积分 截止 2026年10月31日, Qoder Qwen3.8-Flash still free past 30 Sep with the end date still to be announced, Ling 3.1 Flash still free through 13 October (Vercel changelog), Cerebras still a $5/30-day trial requiring a card with no auto-renewing free tier. Nothing moved."
+      },
+      {
+        "c": "exp",
+        "n": "DeepSeek Harness ¥6 credit — last day (6 Oct)",
+        "t": "Desktop-app launch credit, multi-source: the vendor tracker's own detail page, read directly this morning, still says 活动大致用到 10 月 6 日 and shows 76 community votes at 89% still valid. Small grant; the app is the point. Expect it to move to closed on the next run."
+      },
+      {
+        "c": "exp",
+        "n": "AI21 $10 credit — 6 Oct (length still contested, sixth check)",
+        "t": "docs.ai21.com still says the $10 trial is good for three months; ai21.com/pricing still says 7 days. Unresolved and deliberately not flipped — the date is a placeholder either way, since the clock runs from your own signup, not a shared deadline."
+      },
+      {
+        "c": "exp",
+        "n": "ZCode Trust Build / MiniMax Code / GLM night-free — 7 Oct",
+        "t": "All three still end 7 October. GLM night-free is paid Coding Plan subscribers only; Trust Build tokens land late and expire the next midnight, so claim on a day you can actually work."
+      },
+      {
+        "c": "ext",
+        "n": "Kilo free roster — now five models",
+        "t": "The vendor page's own counter has fallen from six free models to five: Ling 3.1 Flash, Dots3-Note Preview, Laguna S 2.1, Nemotron 3 Ultra and Nemotron 3 Super. All five were already in this row's model list — one older listing aged out, which is the rotating catalog working as advertised."
+      },
+      {
+        "c": "exp",
+        "n": "Hunyuan Hy4 new users — first conversation by 10 Oct",
+        "t": "The 31 Oct night-free extension is unchanged (23:00–08:00, re-confirmed today via Tencent WorkBuddy's 30 Sep announcement), but a user who has never opened Hy4 must start their first conversation by 10 October 23:59 to trigger the 14-day daily quota."
+      },
+      {
+        "c": "exp",
+        "n": "Ling 3.1 Flash — free to 13 Oct",
+        "t": "Vercel changelog re-read: free through 13 October. Use the -free model ID — it stops serving at the end rather than billing you. Also carried free in Kilo Code."
+      }
+    ]
+  },
+  {
+    "d": "yesterday",
+    "label": "Yesterday · 5 Oct",
     "items": [
       {
         "c": "exp",
@@ -1674,8 +1751,8 @@ window.RADAR = {
     ]
   },
   {
-    "d": "yesterday",
-    "label": "Yesterday · 4 Oct",
+    "d": "week",
+    "label": "Earlier this week · 4 Oct",
     "items": [
       {
         "c": "new",
@@ -1757,52 +1834,6 @@ window.RADAR = {
         "c": "exp",
         "n": "AI21 $10 credit — 6 Oct (length still contested)",
         "t": "AI21's own two pages still disagree: pricing says 7 days, docs say three months. Unresolved; the date is a placeholder either way since the clock runs from your signup."
-      }
-    ]
-  },
-  {
-    "d": "week",
-    "label": "Earlier this week · 2 Oct",
-    "items": [
-      {
-        "c": "exp",
-        "n": "AI21 $10 trial — AI21's own pages disagree on the length",
-        "t": "ai21.com/pricing says 7 days; docs.ai21.com/docs/usage-cost says three months. Not reconciled, so the length is uncertain. The 6 Oct date on that row is a placeholder — the clock runs from your own signup either way. No card needed to start."
-      },
-      {
-        "c": "exp",
-        "n": "CORRECTION — Cerebras is not a 1M-token/day free tier",
-        "t": "The vendor replaced its open free tier with a $5 trial credit that expires 30 days after the grant, and states it offers no free tier that renews. A card is required before API access works at all. Confirmed on inference-docs.cerebras.ai rate-limits and the 2026-07-16 change-log entry. The old 1M/day figure came from third-party trackers and should not have been published."
-      },
-      {
-        "c": "new",
-        "n": "Ling 3.1 Flash — free to 13 Oct",
-        "t": "Ant's InclusionAI model, $0.00 in and out through Vercel AI Gateway and Command Code. Use the -free model ID: it stops serving at the end rather than billing you. Confirmed on Vercel's own changelog."
-      },
-      {
-        "c": "new",
-        "n": "DeepSeek Harness — ¥6 desktop credit",
-        "t": "Official desktop client launched 29 Sep. Sign in, and sign out/in again if the credit does not show. Small grant, short window (about 6 Oct) — the app is the point."
-      },
-      {
-        "c": "ext",
-        "n": "Qoder Qwen3.8-Flash — still free, no end date",
-        "t": "Re-read on docs.qoder.com/events/flashoffer today: extended past 30 Sep, end date to be announced on that page. No action needed."
-      },
-      {
-        "c": "exp",
-        "n": "ZCode Trust Build / MiniMax Code / GLM night-free — 7 Oct",
-        "t": "All three still listed as running to 7 October. GLM night-free is paid Coding Plan subscribers only; Trust Build tokens land late and expire next midnight."
-      },
-      {
-        "c": "exp",
-        "n": "AI21 $10 credit — 6 Oct",
-        "t": "7-day window. Still a poor claim unless you will use Jamba this week."
-      },
-      {
-        "c": "exp",
-        "n": "Doubao 30-day Standard — ~17 Oct",
-        "t": "Second round of the desktop grant. Date rests on reporting of the 24 Sep announcement, not the vendor campaign page, so it stays approximate."
       }
     ]
   },
